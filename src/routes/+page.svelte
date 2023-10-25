@@ -1,5 +1,6 @@
 <script lang="ts">
-	import heroImage from '$lib/assets/images/hero.png';
+	const heroImage =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/hero.png?alt=media&token=f12c1a5a-8584-4d5d-8c67-81cad9fcffa0&_gl=1*bg265y*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE2MS42MC4wLjA.';
 	import {
 		SmartphoneNfcIcon,
 		NfcIcon,
@@ -7,16 +8,26 @@
 		HardDriveDownloadIcon,
 		CopyCheckIcon
 	} from 'lucide-svelte';
-	import macScreenDisplay from '$lib/assets/images/iMac.png';
-	import component01Image from '$lib/assets/images/Component_01.png';
-	import component02Image from '$lib/assets/images/Component_02.png';
-	import component03Image from '$lib/assets/images/Component_03.png';
-	import component04Image from '$lib/assets/images/Component_04.png';
-	import component05Image from '$lib/assets/images/Component_05.png';
-	import component06Image from '$lib/assets/images/Component_06.png';
+	const macScreenDisplay =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/iMac.png?alt=media&token=3cf90a2c-930b-4c1d-9994-7b085391bc49&_gl=1*15ym3we*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE2OS41Mi4wLjA.';
 
-	import posterImage from '$lib/assets/images/poster.png';
-	import ipadFrame from '$lib/assets/images/ipad_frame.png';
+	const component01Image =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_01.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+	const component02Image =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_02.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+	const component03Image =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_03.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+	const component04Image =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_04.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+	const component05Image =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_05.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+	const component06Image =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_06.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+
+	const posterImage =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/poster.png?alt=media&token=30deee74-c1d6-45a6-a636-f3213b6847ed&_gl=1*7825in*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE4NS4zNi4wLjA.';
+	const ipadFrame =
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/ipad_frame.png?alt=media&token=9f63f693-87b7-4b23-9082-4974130a13b3&_gl=1*jpag39*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE3Ny40NC4wLjA.';
 </script>
 
 <header class="p-6 px-12 flex flex-row justify-between">
@@ -136,7 +147,7 @@
 	</div>
 
 	<div
-		class="bg-[url('../lib/images/component_sec_bg.png')] bg-center bg-no-repeat bg-cover py-[27%] 2xl:py-[35%]"
+		class="bg-[url('https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/component_sec_bg.png?alt=media&token=13a938ab-8154-43c9-b74d-cb30d2f5a65b&_gl=1*1wjrz69*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzIyMi42MC4wLjA.')] bg-center bg-no-repeat bg-cover py-[27%] 2xl:py-[35%]"
 	>
 		<div class="pl-12 text-5xl font-bold flex flex-col gap-4 mt-24 scroll-m-12" id="components">
 			<p>COMPONENTS</p>
