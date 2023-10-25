@@ -1,5 +1,5 @@
 <script lang="ts">
-	import heroImage from '$lib/images/hero.png';
+	import heroImage from '$lib/assets/images/hero.png';
 	import {
 		SmartphoneNfcIcon,
 		NfcIcon,
@@ -7,16 +7,16 @@
 		HardDriveDownloadIcon,
 		CopyCheckIcon
 	} from 'lucide-svelte';
-	import macScreenDisplay from '$lib/images/iMac.png';
-	import component01Image from '$lib/images/Component_01.png';
-	import component02Image from '$lib/images/Component_02.png';
-	import component03Image from '$lib/images/Component_03.png';
-	import component04Image from '$lib/images/Component_04.png';
-	import component05Image from '$lib/images/Component_05.png';
-	import component06Image from '$lib/images/Component_06.png';
+	import macScreenDisplay from '$lib/assets/images/iMac.png';
+	import component01Image from '$lib/assets/images/Component_01.png';
+	import component02Image from '$lib/assets/images/Component_02.png';
+	import component03Image from '$lib/assets/images/Component_03.png';
+	import component04Image from '$lib/assets/images/Component_04.png';
+	import component05Image from '$lib/assets/images/Component_05.png';
+	import component06Image from '$lib/assets/images/Component_06.png';
 
-	import posterImage from '../lib/images/poster.png';
-	import ipadFrame from '$lib/images/ipad_frame.png';
+	import posterImage from '$lib/assets/images/poster.png';
+	import ipadFrame from '$lib/assets/images/ipad_frame.png';
 </script>
 
 <header class="p-6 px-12 flex flex-row justify-between">
