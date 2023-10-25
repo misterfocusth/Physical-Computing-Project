@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: 'gh-pages'
 
 jobs:
   build_site:
@@ -29,7 +29,7 @@ jobs:
         env:
           BASE_PATH: '/Physical-Computing-Project'
         run: |
-          npm run build
+          pnpm run build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v2
