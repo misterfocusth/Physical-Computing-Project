@@ -1,6 +1,5 @@
 <script lang="ts">
-	const heroImage =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/hero.png?alt=media&token=f12c1a5a-8584-4d5d-8c67-81cad9fcffa0&_gl=1*bg265y*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE2MS42MC4wLjA.';
+	const heroImage = 'https://tempstorage65070219.blob.core.windows.net/images/hero.png';
 	import {
 		SmartphoneNfcIcon,
 		NfcIcon,
@@ -8,33 +7,30 @@
 		HardDriveDownloadIcon,
 		CopyCheckIcon
 	} from 'lucide-svelte';
-	const macScreenDisplay =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/iMac.png?alt=media&token=3cf90a2c-930b-4c1d-9994-7b085391bc49&_gl=1*15ym3we*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE2OS41Mi4wLjA.';
+	const macScreenDisplay = 'https://tempstorage65070219.blob.core.windows.net/images/iMac.png';
 
 	const component01Image =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_01.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+		'https://tempstorage65070219.blob.core.windows.net/images/Component_01.png';
 	const component02Image =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_02.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+		'https://tempstorage65070219.blob.core.windows.net/images/Component_02.png';
 	const component03Image =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_03.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+		'https://tempstorage65070219.blob.core.windows.net/images/Component_03.png';
 	const component04Image =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_04.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+		'https://tempstorage65070219.blob.core.windows.net/images/Component_04.png';
 	const component05Image =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_05.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+		'https://tempstorage65070219.blob.core.windows.net/images/Component_05.png';
 	const component06Image =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/Component_06.png?alt=media&token=5e020851-d280-48ee-ae36-17e4a5e9a124&_gl=1*1e8tm5x*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2Njk5Mi4xNC4wLjA.';
+		'https://tempstorage65070219.blob.core.windows.net/images/Component_06.png';
 
-	const posterImage =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/poster.png?alt=media&token=30deee74-c1d6-45a6-a636-f3213b6847ed&_gl=1*7825in*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE4NS4zNi4wLjA.';
-	const ipadFrame =
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/ipad_frame.png?alt=media&token=9f63f693-87b7-4b23-9082-4974130a13b3&_gl=1*jpag39*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE3Ny40NC4wLjA.';
+	const posterImage = 'https://tempstorage65070219.blob.core.windows.net/images/poster.png';
+	const ipadFrame = 'https://tempstorage65070219.blob.core.windows.net/images/ipad_frame.png';
 
 	const moreImages = [
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage01.png?alt=media&token=7dc560bc-8de5-498a-9f9e-222be399710a&_gl=1*hqhxhn*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTg5My4yOC4wLjA.',
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage02.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.',
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage03.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.',
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage04.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.',
-		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage05.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.'
+		'https://tempstorage65070219.blob.core.windows.net/images/moreImage01.png',
+		'https://tempstorage65070219.blob.core.windows.net/images/moreImage02.png',
+		'https://tempstorage65070219.blob.core.windows.net/images/moreImage03.png',
+		'https://tempstorage65070219.blob.core.windows.net/images/moreImage04.png',
+		'https://tempstorage65070219.blob.core.windows.net/images/moreImage05.png'
 	];
 </script>
 
@@ -196,7 +192,7 @@
 	</div>
 
 	<div
-		class="bg-[url('https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/component_sec_bg.png?alt=media&token=13a938ab-8154-43c9-b74d-cb30d2f5a65b&_gl=1*1wjrz69*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzIyMi42MC4wLjA.')] bg-center bg-no-repeat bg-cover py-[27%] 2xl:py-[35%]"
+		class="bg-[url('https://tempstorage65070219.blob.core.windows.net/images/component_sec_bg.png')] bg-center bg-no-repeat bg-cover py-[27%] 2xl:py-[35%]"
 	>
 		<div class="pl-12 text-5xl font-bold flex flex-col gap-4 mt-24 scroll-m-12" id="components">
 			<p>COMPONENTS</p>
@@ -350,7 +346,7 @@
 	<div class="flex flex-row gap-2 justify-around px-12 mt-16">
 		<div class="font-bold text-xl text-center">
 			<img
-				src={'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/ballon.jpg?alt=media&token=689b65d1-2606-4e4b-ae46-579515446f51&_gl=1*jeyb9j*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODMwMzMwMi4zLjEuMTY5ODMwMzQ2NS4zNi4wLjA.'}
+				src={'https://tempstorage65070219.blob.core.windows.net/images/ballon.jpg'}
 				alt="people"
 				class="rounded-full w-48 h-48"
 			/>
@@ -360,7 +356,7 @@
 
 		<div class="font-bold text-xl text-center">
 			<img
-				src={'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/nun.jpg?alt=media&token=b71df4f2-1135-4994-876a-a1e0233b2769&_gl=1*y168r9*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODMwMzMwMi4zLjEuMTY5ODMwMzQ1NC40Ny4wLjA.'}
+				src={'https://tempstorage65070219.blob.core.windows.net/images/nun.jpg'}
 				alt="people"
 				class="rounded-full w-48 h-48"
 			/>
@@ -369,7 +365,7 @@
 		</div>
 		<div class="font-bold text-xl text-center">
 			<img
-				src={'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/bamboo.jpg?alt=media&token=18c3d4b1-5f51-4731-b169-39964c8bfe9d&_gl=1*2yvg77*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODMwMzMwMi4zLjEuMTY5ODMwMzQ3MS4zMC4wLjA.'}
+				src={'https://tempstorage65070219.blob.core.windows.net/images/bamboo.jpg'}
 				alt="people"
 				class="rounded-full w-48 h-48"
 			/>
@@ -378,7 +374,7 @@
 		</div>
 		<div class="font-bold text-xl text-center">
 			<img
-				src={'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/sila.jpg?alt=media&token=add67749-e855-4526-a4db-4f499b33d579&_gl=1*1mbnf9u*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODMwMzMwMi4zLjEuMTY5ODMwMzQ0MS42MC4wLjA.'}
+				src={'https://tempstorage65070219.blob.core.windows.net/images/sila.jpg'}
 				alt="people"
 				class="rounded-full w-48 h-48"
 			/>
