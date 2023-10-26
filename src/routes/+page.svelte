@@ -187,7 +187,7 @@
 			class="absolute top-[7%] left-[20%]"
 			width="60%"
 			height="62%"
-			src="https://www.youtube.com/embed/TAkmNrteM4I?si=_J7L4edTZhAJMOCt"
+			src="https://www.youtube.com/embed/bK_Bw9ReWZ4?si=ut5PKAU7ZE5RvnwU"
 			title="YouTube video player"
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
