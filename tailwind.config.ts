@@ -71,6 +71,7 @@ export default {
 	},
 
 	plugins: [
+		require('daisyui'),
 		typography,
 		plugin(function ({ addVariant, matchUtilities, theme }) {
 			addVariant('hocus', ['&:hover', '&:focus']);

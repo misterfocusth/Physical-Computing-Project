@@ -28,6 +28,14 @@
 		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/poster.png?alt=media&token=30deee74-c1d6-45a6-a636-f3213b6847ed&_gl=1*7825in*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE4NS4zNi4wLjA.';
 	const ipadFrame =
 		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/ipad_frame.png?alt=media&token=9f63f693-87b7-4b23-9082-4974130a13b3&_gl=1*jpag39*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI2Njg4MS4xLjEuMTY5ODI2NzE3Ny40NC4wLjA.';
+
+	const moreImages = [
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage01.png?alt=media&token=7dc560bc-8de5-498a-9f9e-222be399710a&_gl=1*hqhxhn*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTg5My4yOC4wLjA.',
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage02.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.',
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage03.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.',
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage04.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.',
+		'https://firebasestorage.googleapis.com/v0/b/webrtc-firebase-f1d8e.appspot.com/o/moreImage05.png?alt=media&token=7cae3e65-4116-4bc6-912f-6c7c9f1df0e4&_gl=1*104tyai*_ga*NzM1NjI2ODEzLjE2OTgyNjY4ODE.*_ga_CW55HF8NVT*MTY5ODI5OTM0NC4yLjEuMTY5ODI5OTkyMi42MC4wLjA.'
+	];
 </script>
 
 <header class="p-6 px-12 flex flex-row justify-between">
@@ -42,7 +50,7 @@
 	</div>
 </header>
 
-<main class="mb-24">
+<main class="pb-12">
 	<div class="flex flex-row justify-between items-center relative min-w-full">
 		<div class="pl-12 mt-[15%]">
 			<p class="text-[96px] font-bold">ULTRASONIC</p>
@@ -267,17 +275,38 @@
 	</div>
 
 	<div class="pl-12 text-5xl font-bold flex flex-col gap-4 scroll-m-12 mt-24" id="members">
+		<p>รูปภาพชิ้นงานเพิ่มเติม</p>
+	</div>
+
+	<div
+		class="carousel carousel-center h-80 p-4 space-x-4 bg-neutral rounded-box mt-16 flex justify-center mx-16"
+	>
+		<div class="carousel-item">
+			<img src={moreImages[0]} class="rounded-box" alt="more" />
+		</div>
+		<div class="carousel-item">
+			<img src={moreImages[1]} class="rounded-box" alt="more" />
+		</div>
+		<div class="carousel-item">
+			<img src={moreImages[2]} class="rounded-box" alt="more" />
+		</div>
+		<div class="carousel-item">
+			<img src={moreImages[3]} class="rounded-box" alt="more" />
+		</div>
+		<div class="carousel-item">
+			<img src={moreImages[4]} class="rounded-box" alt="more" />
+		</div>
+	</div>
+
+	<div
+		class="pl-12 text-5xl font-bold flex flex-col text-center gap-4 scroll-m-12 mt-24"
+		id="members"
+	>
 		<p>TEAM MEMBERS</p>
 		<p>(สมาชิกกลุ่ม)</p>
 	</div>
 
-	<div class="flex flex-row gap-2 justify-between px-12 mt-16">
-		<div class="font-bold text-xl text-center">
-			<img src={posterImage} alt="people" class="rounded-full w-48 h-48" />
-			<p class="mt-4">นายศิลา ภักดีวงษ์</p>
-			<p>(65070219)</p>
-		</div>
-
+	<div class="flex flex-row gap-2 justify-around px-12 mt-16">
 		<div class="font-bold text-xl text-center">
 			<img src={posterImage} alt="people" class="rounded-full w-48 h-48" />
 			<p class="mt-4">นายศิลา ภักดีวงษ์</p>
@@ -303,3 +332,11 @@
 		</div>
 	</div>
 </main>
+
+<footer class="text-sm p-8 bg-white text-center flex flex-col gap-2">
+	<p>This project is a part of Physical Computing (06016409) subject.</p>
+	<p>
+		Created with ❤️ at School of Information Technology, King Mongkut's Institite of Technology
+		Ladkrabang.
+	</p>
+</footer>
